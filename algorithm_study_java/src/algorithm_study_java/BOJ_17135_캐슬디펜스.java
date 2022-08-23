@@ -62,7 +62,7 @@ public class BOJ_17135_캐슬디펜스 {
 				int minI = -1;
 				int minY = m;
 				int minD = Integer.MAX_VALUE;
-				boolean update = false;
+				int update = 0;
 				for (int i = size - 1; i >= 0; i--) {
 					if (remove[i])
 						continue;
@@ -76,17 +76,20 @@ public class BOJ_17135_캐슬디펜스 {
 								minY = eY;
 								minI = i;
 								minD = distance;
-								update = true;
+								update++;
 							}
 						} else if (distance < minD) {
 							minY = eY;
 							minI = i;
 							minD = distance;
-							update = true;
+							update++;
+						}
+						if (update > m) {
+							break;
 						}
 					}
 				}
-				if (update) {
+				if (update != 0) {
 					removeList[j] = minI;
 				}
 			}
