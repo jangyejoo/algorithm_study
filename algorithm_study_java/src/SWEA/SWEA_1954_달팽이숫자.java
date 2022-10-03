@@ -1,4 +1,4 @@
-package algorithm_study_java;
+package SWEA;
 import java.io.*;
 
 public class SWEA_1954_달팽이숫자 {

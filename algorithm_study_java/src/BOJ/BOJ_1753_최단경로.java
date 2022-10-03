@@ -1,9 +1,7 @@
-package algorithm_study_java;
+package BOJ;
 
 import java.io.*;
 import java.util.*;
-
-import algorithm_study_java.BOJ_1197_최소스패닝트리.Vertex;
 
 public class BOJ_1753_최단경로 {
 

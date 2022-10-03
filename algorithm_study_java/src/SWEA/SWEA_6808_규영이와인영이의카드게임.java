@@ -1,4 +1,4 @@
-package algorithm_study_java;
+package SWEA;
 
 import java.io.*;
 import java.util.*;

@@ -1,4 +1,4 @@
-package algorithm_study_java;
+package BOJ;
 
 public class BOJ_2557_HelloWorld {
 

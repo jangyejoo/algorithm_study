@@ -1,4 +1,4 @@
-package algorithm_study_java;
+package BOJ;
 
 import java.io.*;
 import java.util.HashSet;

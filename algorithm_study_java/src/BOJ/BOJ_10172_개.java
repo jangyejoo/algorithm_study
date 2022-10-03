@@ -1,4 +1,4 @@
-package algorithm_study_java;
+package BOJ;
 
 public class BOJ_10172_개 {
 	public static void main(String[] args) {
