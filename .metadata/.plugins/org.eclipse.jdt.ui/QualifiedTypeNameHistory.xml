@@ -2,6 +2,7 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="javax.swing.plaf.FontUIResource"/>
 <fullyQualifiedTypeName name="java.util.StringTokenizer"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.Queue"/>
 </qualifiedTypeNameHistroy>
