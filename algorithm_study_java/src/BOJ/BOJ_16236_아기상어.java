@@ -13,7 +13,7 @@ public class BOJ_16236_아기상어 {
 
 		int n = Integer.parseInt(br.readLine());
 		int[][] map = new int[n][n];
-
+ 
 //		아기상어 초기 값
 		int initX = -1;
 		int initY = -1;
