@@ -16,7 +16,7 @@ public class BOJ_1789_수들의합 {
 			if (s - num < 0) {
 				num--;
 				s += num;
-				num++;
+				num += 2;
 				cnt--;
 			} else {
 				s -= num;
