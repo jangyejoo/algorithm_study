@@ -25,6 +25,7 @@ public class BOJ_11058_크리보드 {
 			dp[i][2] = Math.max(Math.max(dp[i - 1][1] * 2, dp[i - 2][1] * 3), dp[i - 3][1] * 4);
 		}
 
+
 //		print(dp, n);
 		System.out.println(Math.max(dp[n][0], dp[n][2]));
 
