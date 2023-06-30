@@ -13,11 +13,11 @@ public class BOJ_1107_리모컨 {
 
 		int n = Integer.parseInt(br.readLine());
 		int m = Integer.parseInt(br.readLine());
-		char[] input = new char[m];
+		boolean[] broken = new boolean[10];
 		if (m > 0) {
 			st = new StringTokenizer(br.readLine().trim());
 			for (int i = 0; i < m; i++) {
-				input[i] = st.nextToken().charAt(0);
+				broken[Integer.parseInt(st.nextToken())] = true;
 			}
 		}
 
@@ -27,7 +27,7 @@ public class BOJ_1107_리모컨 {
 		for (int gap = 0; gap < min; gap++) {
 			int[] next = { n + gap, n - gap };
 			for (int number : next) {
-				if (number >= 0 && isPossible(number, input))
+				if (number >= 0 && isPossible(number, broken))
 					min = Math.min(min, Integer.toString(number).length() + gap);
 			}
 
@@ -37,14 +37,13 @@ public class BOJ_1107_리모컨 {
 
 	}
 
-	private static boolean isPossible(int number, char[] input) {
-		char[] check = (number + "").toCharArray();
-		for (char c : check) {
-			for (char d : input) {
-				if (c == d) {
-					return false;
-				}
-			}
+	private static boolean isPossible(int number, boolean[] broken) {
+		if (number == 0)
+			return !broken[0];
+		while (number > 0) {
+			if (broken[number % 10])
+				return false;
+			number /= 10;
 		}
 		return true;
 	}
